@@ -11,6 +11,10 @@ If you are not currently enrolled in ECE 36200 but wish to access the code templ
 
 References for microcontrollers and parts, such as datasheets and specifications, may be found [here](https://engineering.purdue.edu/ece362/refs/).
 
+## Code Template
+
+To obtain a starter template of the PlatformIO settings, code files, etc. that are common to all labs, you can download that [here](template.zip).  You may find this useful if you are using the STM32F091 dev board with PlatformIO for senior design (or really any hobbyist project...).
+
 ## Lab Experiments
 
 Embedded:
