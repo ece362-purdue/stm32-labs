@@ -1,3 +1,7 @@
+> [!CAUTION]
+> This is the lab 0 for the STM32 microcontroller, not the Proton board.  If you are a student in ECE 362 in Fall 2025 onward, you are NOT using the STM32.
+> You can find the lab 0 for the Proton board here: https://github.com/ece362-purdue/proton-labs/tree/main/lab0-intro
+
 # Lab 0
 ## Setting up the Microcontroller
 
