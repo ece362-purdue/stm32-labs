@@ -38,4 +38,4 @@ RISC-V:
 [Lab 10 - Functions](lab10-functions/README.md)  
 [Lab 11 - Computer Organization](lab11-comp-org/README.md)  
 
-ECE 36200 STM32 Lab Experiments © 2025 by Purdue University, Niraj Menon is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+ECE 36200 STM32 Lab Experiments © 2026 by Purdue University, Niraj Menon is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
