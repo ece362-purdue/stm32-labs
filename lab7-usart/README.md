@@ -166,7 +166,7 @@ The strange `__attribute__((weak))` stanza declares these references to be weak 
 
 If you look into the `main()` function after `#define STEP2`, it will first call the `setbuf()` functions to turn off buffering of characters.  By default, the first call to a function like `printf()` or `fgets()` allocates an internal buffer to store 1024 characters before it releases anything. (It actually calls `malloc()` to create this buffer.) This buffering makes the system more efficient, but results in confusion about why the first 1023 characters printed are not seen.  **We turn off buffering to avoid those problems.** Always make sure you make these three calls to `setbuf()` to ensure buffering is turned off when using standard I/O functions. 
 
-You will find that the program prompts for you to enter a name, reads the name, (without echoing characters), you must use [Ctrl]-J to finish typing the name, and it prints and advances to a new line, but it doesn't set the cursor back to the beginning of the line. That's because it sends only a '\n' (newline) and not '\r' (carriage return). After that, the program echoes every character you type as it did in Step 4.1. This time, it is using `getchar()` and `putchar()` to handle characters.
+You will find that the program prompts for you to enter a name, reads the name, (without echoing characters), you must use [Ctrl]-J to finish typing the name, and it prints and advances to a new line, but it doesn't set the cursor back to the beginning of the line. That's because it sends only a '\n' (newline) and not '\r' (carriage return). After that, the program echoes every character you type as it did in Step 1. This time, it is using `getchar()` and `putchar()` to handle characters.
 
 > [!TIP]
 > If you did not see the prompt, reset the microcontroller or open the monitor before you start debugging.
@@ -212,7 +212,7 @@ A second set of files, `tty.c` and `tty.h`, implement a higher-level TTY (an abb
 Do the following steps:
 
 - Comment the `#define STEP2` and uncomment the `#define STEP3`
-- Copy your `__io_putchar()` from step 4.2.
+- Copy your `__io_putchar()` from step 2.
 - In `__io_getchar()`, just call `line_buffer_getchar()` instead of the code that was there before. Be sure to return the value that is returned from `line_buffer_getchar()`.
 
 At this point, characters will be echoed when you type, and you will be able to use the [Backspace] to do simple line editing. The loop that follows also allows you to do line editing because `getchar()` does not return until a linefeed exists in the FIFO.
